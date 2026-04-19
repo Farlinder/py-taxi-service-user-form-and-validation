@@ -49,7 +49,8 @@ urlpatterns = [
     path(
         "cars/<int:pk>/toggle-assign/",
          toggle_assign_to_car,
-         name="car-toggle-assign"),
+         name="car-toggle-assign"
+    ),
     path("drivers/", DriverListView.as_view(), name="driver-list"),
     path(
         "drivers/<int:pk>/",
